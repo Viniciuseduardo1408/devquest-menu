@@ -1,0 +1,118 @@
+body{
+    width: 100%;
+    font-family: var(--font-family);
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    padding: 60px;
+}
+
+.logo-container{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.logo-container .logo-img{
+    width: 100px;
+}
+
+.logo-container .logotipo{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.nav-container{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-container ul{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.nav-container ul li{
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    
+}
+
+.nav-container ul li a{
+    padding: 15px 25px;
+    color: #000;
+}
+
+.nav-container .btg-menu{
+    background-color: var(--color-menu);
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 1.2rem;
+    margin-left: 30px;
+    text-transform: capitalize;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-container ul li a:hover,
+.nav-container .btg-menu:hover{
+    background-color: var(--color-menu);
+    color: hsla(0, 0%, 100%, 1);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 20px var(--color-menu);
+}
+
+@media (max-width: 375px) {
+    .header-container{
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .logo-container{
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+
+    .logo-container .logo-img{
+        width: 80px;
+    }
+
+    .logo-container .logotipo{
+    font-size: 2.5rem;
+}
+
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-container ul li{
+        font-size: 2.5rem;
+    }
+
+    .nav-container ul li a{
+        display: flex;
+        justify-content: center;
+        flex-grow: 2;
+    }
+
+
+    .nav-container .btg-menu{
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+}
